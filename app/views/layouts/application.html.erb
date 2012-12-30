@@ -8,6 +8,26 @@
 </head>
 <body>
 
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Smarts</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="<%= 'active' if params[:controller] == 'tutors' %>"><%= link_to "Tutors", tutors_path %></li>
+          <li class="<%= 'active' if params[:controller] == 'pricing' %>"><%= link_to "Pricing", "#" %></li>
+          <li class="<%= 'active' if params[:controller] == 'contact' %>"><%= link_to "Contact Us", "#" %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="span9"><%= yield %></div>
