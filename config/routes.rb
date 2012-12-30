@@ -1,4 +1,4 @@
-DemoApp::Application.routes.draw do
+Smarts::Application.routes.draw do
   resources :tutors
 
 
