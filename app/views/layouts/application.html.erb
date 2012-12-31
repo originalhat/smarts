@@ -19,10 +19,10 @@
       </a>
       <div class="nav-collapse">
         <ul class="nav">
-          <li class="<%= 'active' if params[:controller] == 'tutors' %>"><%= link_to "Tutors", tutors_path %></li>
-          <li class="<%= 'active' if params[:controller] == 'subjects' %>"><%= link_to "Subjects", "#" %></li>
-          <li class="<%= 'active' if params[:controller] == 'pricing' %>"><%= link_to "Pricing", "#" %></li>
-          <li class="<%= 'active' if params[:controller] == 'contact' %>"><%= link_to "Contact Us", "#" %></li>
+          <li class="<%= 'active' if params[:controller] == 'tutors' %>"><%= link_to "Tutors", "/tutors/index" %></li>
+          <li class="<%= 'active' if params[:controller] == 'subjects' %>"><%= link_to "Subjects", "/subjects/index" %></li>
+          <li class="<%= 'active' if params[:controller] == 'pricing' %>"><%= link_to "Pricing", "/pricing/index" %></li>
+          <li class="<%= 'active' if params[:controller] == 'contact' %>"><%= link_to "Contact Us", "/contact/index" %></li>
         </ul>
       </div>
     </div>
@@ -34,8 +34,9 @@
     <%= yield %>
   </div>
 </div>
+
 <footer class="footer">
-  <h6>Copyright The Tudors 2013</h6>
+  <h6>Copyright The Tuts 2013</h6>
 </footer>
 
 </body>
