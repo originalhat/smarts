@@ -46,3 +46,7 @@ html, body {
 .center {
   text-align: center;
 }
+
+.navbar-fixed-top .brand {
+  background-color: #d44413;
+}
