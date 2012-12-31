@@ -1,8 +1,10 @@
 Smarts::Application.routes.draw do
-  root :to => "home#index"
+  get "subjects/index"
+  get "tutors/index"
+  get "contact/index"
+  get "pricing/index"
 
-  resources :tutors
-  resources :users
+  root :to => "home#index"
 
 
   # The priority is based upon order of creation:
