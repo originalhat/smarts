@@ -24,3 +24,29 @@
 </div>
 
 <hr>
+
+<div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="item">
+      <%= image_tag("filler-02.jpg") %>
+    </div>
+    <div class="item">
+      <%= image_tag("filler-03.jpg") %>
+    </div>
+    <div class="item">
+      <%= image_tag("filler-01.jpg") %>
+    </div>
+  </div>
+  <!-- Carousel nav -->
+  <!-- <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a> -->
+</div>
+
+<script>
+  $('.carousel').carousel('pause')
+  $('.carousel').carousel('next')
+  $('.carousel').carousel({
+    interval: 200
+  })
+</script>
